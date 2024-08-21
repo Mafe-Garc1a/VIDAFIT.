@@ -1,0 +1,40 @@
+.carousel-item img{
+    width: 40%;
+    height: 450px;
+}
+.malos-habitos h2{
+    font-size: 2.4em;
+}
+.pou{
+    background: linear-gradient( rgba(2, 99, 2, 0.178), rgba(9, 206, 9, 0.158));
+}
+.mua{
+    margin-top: 2em;
+}
+.verdeoscuro{
+    background-color: rgb(2, 51, 2);
+    color:rgb(2, 51, 2) ;
+}
+.pou2{
+    background-color: rgba(4, 109, 4, 0.568);
+}
+.carrutienda{
+    margin-left: 8em;
+}
+.acero{
+    background-color: rgb(21, 163, 140);
+}
+.azuloscuro{
+    background-color: rgba(2, 2, 71, 0.911);
+}
+img{
+    object-fit: cover
+}
+/* a las imagenes de la tienda ponerle eso para que nose salga las fotos de la ropa */
+.tienda{
+    width: 50%;
+    height: 200px;
+}
+.iconos i{
+    font-size: 2.3em;
+}

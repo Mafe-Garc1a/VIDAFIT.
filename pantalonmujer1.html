@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white" href="#"><span class="text-success">Vida</span>Fit</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-success "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                </li>
+               
+            <li class="nav-item dropdown ">
+                <a class="nav-link po  dropdown-toggle text-success" href="#TIENDA" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TIENDA
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tiendamujer.html">Mujer</a></li>
+                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                    <li><a class="dropdown-item" href="#">Niños</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex " role="search">
+                <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                <button onclick="buscar()" class="btn btn-outline-success" type="submit">Buscar</button>
+                <ul id="resultados" class="resultados"></ul>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <p class="mt-2">Lorem ipsum dolor sit amet.</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 col-sm-12 bg-light justify-content-center ">
+                <div id="carouselExampleFade" class="carousel slide carousel-dark ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img id="negro" src="img/pantalosmujerE.webp" class="d-block w-50 ms-8 carrutienda " alt="...">
+                        </div>
+                    <div class="carousel-item">
+                        <img id="gris" src="img/pantalo1mujergris.webp" class="d-block w-50 ms-8 carrutienda " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="verdeoscuroo" src="img/pantalon1jumerverdeoscuro.png" class="d-block w-50 ms-8 carrutienda " alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 class="mt-2">Sudadera Clasica Nautica</h2>
+                <h2 class="display-4">$41.900.<span class="display-6">00</span></h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ver metodos de pago
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h6>Tarjetas de crédito</h6>
+                            <p>hasta 48 cuotas con interes</p>
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-3 col-sm-12 text-center"><img src="img/tarjeta1.svg" alt=""></div>
+                                <div class="col-4 col-md-3 col-lg-3 col-sm-12 text-center"><img src="img/tarjeta2.svg" alt=""></div>
+                                <div class="col-4 col-md-3 col-lg-3 col-sm-12 text-center"><img src="img/tarjeta3.svg" alt=""></div>
+                                <div class="col-4 col-md-3 col-lg-3 col-sm-12 text-center"><img src="img/tarjeta4.svg" alt=""></div>
+                            </div>
+                            <h6>otros medios de pago</h6>
+                            <p>efectivo en puntos de pago</p>
+                            <img src="img/otros mediospago.svg" alt="">
+                        </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+                <h5 class="mt-4 ">colores disponibles</h5>
+                <div class="row mt-2 ms-2">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input bg-dark fs-3" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Negro
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input bg-secondary fs-3" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Gris
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input   verdeoscuro fs-3" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label " for="exampleRadios3">
+                                Verde oscuro
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-4">tallas disponibles</h5>
+                <div class="btn-group mt-2" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-white" for="btnradio1">S</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio2">M</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio3">L</label>
+                    
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio4">XL </label>
+                </div>
+                
+                <h5 class="mt-3 fs-6 mb-3 text-success"><i class="bi bi-clock "></i>   solo tienes 30 dias de devolucion</h5>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn mb-4 btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    comprar ahora
+                </button>
+                <button class="btn pou2 mb-4 text-white">añadir al carrito  <i class="bi bi-cart"></i> </button>
+  
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title text-success fs-4" id="exampleModalLabel">Gracias por tu compra</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6 class="text-danger">recuerda que solo puedes realizar la compra si ya estas registrado</h6>
+            <p>si no es asi vuelve al inicio y registrate</p>
+            <div class="form-floating mb-3">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellidos </label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">correo</label>
+                        <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Porfavor ingrese su correo eletronico.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        porfavor ingrese la ciudad de destino .
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Departamento</label>
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Risaralda</option>
+                        <option >Risaralda</option>
+                        <option>Caldas</option>
+                        <option >Cundinamarca</option>
+                        <option >Antioquia</option>
+                        <option >Valle del cauca</option>
+                        </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                      </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">codigo postal</label>
+                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <div class="invalid-feedback">
+                        ingrese el codigo postal.
+                      </div>
+                    </div>
+                    
+                    <div class="row mt-2 ms-2">
+                        <h6>elije el color que deseas</h6>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input bg-dark fs-3" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Negro
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input bg-secondary fs-3" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Gris
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input   verdeoscuro fs-3" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label " for="exampleRadios3">
+                                Verde oscuro
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                 <h6>elije la talla</h6>
+                <div class="btn-group mt-2" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-white" for="btnradio1">S</label>
+                    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio2">M</label>
+                    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio3">L</label>
+                    
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-white" for="btnradio4">XL </label>
+                </div>
+                <h6 >seleccione la cantidad que desea llevar</h6>
+                <select class="form-select" aria-label="Default select example" required>
+                    
+                    <option selected >  1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                        acepto terminos y condiciones.
+                        </label>
+                        <div class="invalid-feedback">
+                        acepte termino y cndiciones
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-success" type="submit">confirmar compra
+                            
+                        </button>
+                    </div>
+                    
+                
+                
+               
+
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success"> finalizar compra</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

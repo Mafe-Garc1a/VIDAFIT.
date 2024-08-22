@@ -8,14 +8,23 @@
 .Beige{
     background-color: bisque;
 }
+.bg-negro{
+    background-color: rgba(0, 0, 0, 0.897);
+}
 .lila{
     background-color: rgb(219, 125, 219);
+}
+.Bg-danger{
+    background-color: rgba(255, 0, 0, 0.863);
 }
 .pou{
     background: linear-gradient( rgba(2, 99, 2, 0.178), rgba(9, 206, 9, 0.158));
 }
 .mua{
-    margin-top: 2em;
+    margin-top: 2.5em;
+}
+.bg-secondary{
+    color: aliceblue;
 }
 .verdeoscuro{
     background-color: rgb(2, 51, 2);
@@ -25,8 +34,10 @@
     background-color: rgba(4, 109, 4, 0.568);
 }
 .carrutienda{
-    margin-left: 8em;
+    margin-left: 7.8em;
 }
+
+
 .acero{
     background-color: rgb(21, 163, 140);
 }

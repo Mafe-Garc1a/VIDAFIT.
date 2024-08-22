@@ -5,6 +5,12 @@
 .malos-habitos h2{
     font-size: 2.4em;
 }
+.Beige{
+    background-color: bisque;
+}
+.lila{
+    background-color: rgb(219, 125, 219);
+}
 .pou{
     background: linear-gradient( rgba(2, 99, 2, 0.178), rgba(9, 206, 9, 0.158));
 }
